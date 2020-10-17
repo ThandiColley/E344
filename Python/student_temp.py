@@ -8,11 +8,10 @@ def calibrate(time, amplitude):
     ######################################
     # temperature = 0
 
-    Vout_mean = mean(amplitude[len(amplitude) - 20:len(amplitude]))
-    temperature = Vout_mean*2.014 + 32.916
+    Vout_mean = mean(amplitude[len(amplitude) - 20:len(amplitude)])
+    temperature = round((Vout_mean*2.014) + 32.916)
         
         
     ######################################
         
     return temperature
-        
