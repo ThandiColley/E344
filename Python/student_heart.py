@@ -25,7 +25,7 @@ def calibrate(time, amplitude):
             beat += 1
             endT = time
 
-        preA = amp
+        preA = nowA
         i += 1
 
     bpm = round(((beat - 1)/(endT - startT))*60)
